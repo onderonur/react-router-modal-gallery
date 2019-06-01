@@ -1,6 +1,6 @@
 {
   "name": "react-router-modal-gallery",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A simple package to create modal gallery with react-router",
   "author": "Onur Onder",
   "homepage": "https://react-router-modal-gallery.netlify.com",
