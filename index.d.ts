@@ -36,6 +36,5 @@ declare module "react-router-modal-gallery" {
     previousParentLocation: H.Location;
     isModal: boolean;
   }
-  export const ModalRouteContext: React.Context<ModalRouteContextValues>;
   export function useModalGallery(): ModalRouteContextValues;
 }
