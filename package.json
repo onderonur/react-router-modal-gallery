@@ -46,15 +46,15 @@
     "react-router-dom": ">=5.0.0"
   },
   "devDependencies": {
-    "@material-ui/core": "^4.0.0",
+    "@material-ui/core": "^4.3.1",
     "eslint": "^5.16.0",
-    "eslint-loader": "^2.1.2",
-    "eslint-plugin-react": "^7.13.0",
-    "eslint-plugin-react-hooks": "^1.6.0",
+    "eslint-loader": "^2.2.1",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.6.1",
     "nwb": "0.23.x",
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
-    "react-router-dom": "^5.0.0",
-    "styled-components": "^4.2.1"
+    "react-router-dom": "^5.0.1",
+    "styled-components": "^4.3.2"
   }
 }

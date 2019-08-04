@@ -18,6 +18,7 @@ function ModalRouteContent({ defaultParentPath, children, ...rest }) {
   useEffect(() => {
     function addStateToLocation() {
       history.replace({
+        ...location,
         state: {
           ...location.state,
           defaultParentPath,

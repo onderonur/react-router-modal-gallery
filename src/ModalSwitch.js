@@ -7,6 +7,7 @@ import React, {
   useCallback
 } from "react";
 import propTypes from "prop-types";
+import { splitPathnameAndQueryString } from "./ModalLink";
 
 export const ModalRouteContext = React.createContext();
 
@@ -95,9 +96,12 @@ function ModalSwitch({ history, location, children, renderModal }) {
       // Location has a modal and defaultParentPath in its state.
       // Meaning that the user opened the modal directly by url wihout previous navigation. (startedWithModal)
       // Thus, we are setting this info to state.
+      const { pathname, search } = splitPathnameAndQueryString(
+        location.state.defaultParentPath
+      );
       previousParentLocation.current = {
-        pathname: location.state.defaultParentPath,
-        search: "",
+        pathname,
+        search,
         hash: ""
       };
 
