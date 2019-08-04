@@ -1,10 +1,11 @@
 {
+  "root": true,
   "env": {
     "browser": true,
     "es6": true,
     "node": true
   },
-  "extends": ["eslint:recommended", "plugin:react/recommended"],
+  "extends": ["eslint:recommended", "plugin:react/recommended", "prettier"],
   "globals": {
     "Atomics": "readonly",
     "SharedArrayBuffer": "readonly"
@@ -16,14 +17,18 @@
     "ecmaVersion": 2018,
     "sourceType": "module"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "prettier"],
   "rules": {
-    "react/jsx-uses-react": "error",
-    "react/jsx-uses-vars": "error",
+    "prettier/prettier": "warn",
     "no-unused-vars": "warn",
     "no-constant-condition": "warn",
     "no-console": "warn",
     "no-empty": "warn",
+    "prefer-template": "warn",
+    "prefer-destructuring": "warn",
+    "prefer-const": "warn",
+    "react/jsx-uses-react": "error",
+    "react/jsx-uses-vars": "error",
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
   }

@@ -1,10 +1,10 @@
-import React from "react";
-import MovieList from "./MovieList";
-import { getDirectorByMovieId, getMovieById } from "../data";
-import { ModalLink } from "../../../src";
-import styled from "styled-components";
-import { Typography } from "@material-ui/core";
-import PropTypes from "prop-types";
+import React from 'react';
+import MovieList from './MovieList';
+import { getDirectorByMovieId, getMovieById } from '../data';
+import { ModalLink } from '../../../src';
+import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 const Root = styled.div`
   padding: 12px;

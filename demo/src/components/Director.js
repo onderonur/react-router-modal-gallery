@@ -1,9 +1,9 @@
-import React from "react";
-import MovieList from "./MovieList";
-import { getDirectorById } from "../data";
-import styled from "styled-components";
-import { Typography } from "@material-ui/core";
-import PropTypes from "prop-types";
+import React from 'react';
+import MovieList from './MovieList';
+import { getDirectorById } from '../data';
+import styled from 'styled-components';
+import { Typography } from '@material-ui/core';
+import PropTypes from 'prop-types';
 
 const Root = styled.div`
   padding: 12px;

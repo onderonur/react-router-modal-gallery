@@ -1,6 +1,6 @@
-import React from "react";
-import { ModalLink } from "../../../src";
-import PropTypes from "prop-types";
+import React from 'react';
+import { ModalLink } from '../../../src';
+import PropTypes from 'prop-types';
 
 const MovieList = ({ movies }) => {
   return (

@@ -1,6 +1,6 @@
-import React from "react";
-import DirectorList from "./DirectorList";
-import directors from "../data";
+import React from 'react';
+import DirectorList from './DirectorList';
+import directors from '../data';
 
 const Directors = () => (
   <React.Fragment>

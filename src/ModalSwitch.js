@@ -1,20 +1,20 @@
-import { Switch, withRouter } from "react-router";
+import { Switch, withRouter } from 'react-router';
 import React, {
   useEffect,
   useRef,
   useReducer,
   useState,
   useCallback
-} from "react";
-import propTypes from "prop-types";
-import { splitPathnameAndQueryString } from "./ModalLink";
+} from 'react';
+import propTypes from 'prop-types';
+import { splitPathnameAndQueryString } from './ModalLink';
 
 export const ModalRouteContext = React.createContext();
 
 // action types
-const PUSH_MODAL_LOCATION_KEY = "PUSH_MODAL_LOCATION_KEY";
-const CLEAR_MODAL_LOCATION_KEYS = "CLEAR_MODAL_LOCATION_KEYS";
-const SET_MODAL_LOCATION_KEYS = "SET_MODAL_LOCATION_KEYS";
+const PUSH_MODAL_LOCATION_KEY = 'PUSH_MODAL_LOCATION_KEY';
+const CLEAR_MODAL_LOCATION_KEYS = 'CLEAR_MODAL_LOCATION_KEYS';
+const SET_MODAL_LOCATION_KEYS = 'SET_MODAL_LOCATION_KEYS';
 
 // initial state
 const initialState = {
@@ -102,7 +102,7 @@ function ModalSwitch({ history, location, children, renderModal }) {
       previousParentLocation.current = {
         pathname,
         search,
-        hash: ""
+        hash: ''
       };
 
       clearModalLocationKeys();
@@ -117,9 +117,9 @@ function ModalSwitch({ history, location, children, renderModal }) {
       setStartedWithModal(false);
     } else if (!startedWithModal) {
       // User opened a modal but didn't start by directly entering a modal route
-      if (history.action === "POP") {
+      if (history.action === 'POP') {
         handleHistoryNavigation();
-      } else if (history.action !== "REPLACE") {
+      } else if (history.action !== 'REPLACE') {
         // "history.replace" is called inside a modal route.
         // We should not add a location key to modal location keys array in this situation.
         // Or else, we will go back more than we want when the modal is closed.

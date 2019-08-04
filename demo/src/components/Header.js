@@ -1,6 +1,6 @@
-import React from "react";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
+import React from 'react';
+import { Link } from 'react-router-dom';
+import styled from 'styled-components';
 
 const StyledHeader = styled.header`
   background-color: #fafafa;
@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
 
 const Header = () => (
   <StyledHeader>
-    <Link to="/directors" style={{ marginRight: "12px" }}>
+    <Link to="/directors" style={{ marginRight: '12px' }}>
       Directors
     </Link>
     <Link to="/movies">Movies</Link>

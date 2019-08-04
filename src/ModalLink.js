@@ -1,17 +1,17 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export function splitPathnameAndQueryString(path) {
-  const [pathname, search] = path.split("?");
+  const [pathname, search] = path.split('?');
 
   return {
     pathname,
-    search: search ? `?${search}` : ""
+    search: search ? `?${search}` : ''
   };
 }
 
 function addModalStateToLink(to) {
-  if (typeof to === "string") {
+  if (typeof to === 'string') {
     const { pathname, search } = splitPathnameAndQueryString(to);
     return {
       pathname,

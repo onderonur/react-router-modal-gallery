@@ -1,6 +1,6 @@
-import React from "react";
-import MovieList from "./MovieList";
-import { getAllMovies } from "../data";
+import React from 'react';
+import MovieList from './MovieList';
+import { getAllMovies } from '../data';
 
 const Movies = () => {
   const movies = getAllMovies();

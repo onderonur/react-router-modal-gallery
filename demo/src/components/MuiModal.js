@@ -1,5 +1,5 @@
-import React, { useEffect, useState } from "react";
-import { Dialog, DialogContent } from "@material-ui/core";
+import React, { useEffect, useState } from 'react';
+import { Dialog, DialogContent } from '@material-ui/core';
 
 function MuiModal({ children, open, onExited, ...rest }) {
   const [showModal, setShowModal] = useState(false);

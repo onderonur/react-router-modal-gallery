@@ -1,7 +1,7 @@
-import { useEffect } from "react";
-import { Route } from "react-router-dom";
-import propTypes from "prop-types";
-import useModalGallery from "./useModalGallery";
+import { useEffect } from 'react';
+import { Route } from 'react-router-dom';
+import propTypes from 'prop-types';
+import useModalGallery from './useModalGallery';
 
 function ModalRouteContent({ defaultParentPath, children, ...rest }) {
   const { previousParentLocation } = useModalGallery();
@@ -28,7 +28,7 @@ function ModalRouteContent({ defaultParentPath, children, ...rest }) {
     }
 
     if (reRenderRoute) {
-      ("rerender");
+      ('rerender');
       addStateToLocation();
     }
   }, [location, defaultParentPath, reRenderRoute, history]);

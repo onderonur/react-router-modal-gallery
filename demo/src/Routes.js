@@ -1,37 +1,37 @@
-import React from "react";
-import { Route, Redirect } from "react-router-dom";
-import Movie from "./components/Movie";
-import Movies from "./components/Movies";
-import Director from "./components/Director";
-import MuiModal from "./components/MuiModal";
-import Directors from "./components/Directors";
-import { ModalSwitch, ModalRoute } from "../../src";
+import React from 'react';
+import { Route, Redirect } from 'react-router-dom';
+import Movie from './components/Movie';
+import Movies from './components/Movies';
+import Director from './components/Director';
+import MuiModal from './components/MuiModal';
+import Directors from './components/Directors';
+import { ModalSwitch, ModalRoute } from '../../src';
 
 const routes = [
   {
     exact: true,
-    path: "/movies",
+    path: '/movies',
     component: Movies
   },
   {
-    defaultParentPath: "/movies",
+    defaultParentPath: '/movies',
     modal: true,
-    path: "/movies/:id",
+    path: '/movies/:id',
     component: Movie
   },
   {
     exact: true,
-    path: "/directors",
+    path: '/directors',
     component: Directors
   },
   {
-    defaultParentPath: "/directors",
+    defaultParentPath: '/directors',
     modal: true,
-    path: "/directors/:id",
+    path: '/directors/:id',
     component: Director
   },
   {
-    path: "*",
+    path: '*',
     // eslint-disable-next-line
     render: () => <Redirect to="/movies" />
   }

@@ -1,10 +1,10 @@
-import { useContext } from "react";
-import { ModalRouteContext } from "./ModalSwitch";
+import { useContext } from 'react';
+import { ModalRouteContext } from './ModalSwitch';
 
-function useModalGallery(){
-    const context = useContext(ModalRouteContext)
+function useModalGallery() {
+  const context = useContext(ModalRouteContext);
 
-    return context;
+  return context;
 }
 
 export default useModalGallery;

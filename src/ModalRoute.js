@@ -1,7 +1,7 @@
-import React from "react";
-import { Route } from "react-router-dom";
-import ModalRouteContent from "./ModalRouteContent";
-import propTypes from "prop-types";
+import React from 'react';
+import { Route } from 'react-router-dom';
+import ModalRouteContent from './ModalRouteContent';
+import propTypes from 'prop-types';
 
 function ModalRoute({ defaultParentPath, component, ...rest }) {
   return (

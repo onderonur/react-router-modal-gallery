@@ -1,21 +1,21 @@
 const directors = [
   {
-    id: "1",
-    name: "Robert Zemeckis",
+    id: '1',
+    name: 'Robert Zemeckis',
     movies: [
-      { id: "1-1", title: "Back to the Future" },
-      { id: "1-2", title: "Back to the Future II" },
-      { id: "1-3", title: "Back to the Future III" }
+      { id: '1-1', title: 'Back to the Future' },
+      { id: '1-2', title: 'Back to the Future II' },
+      { id: '1-3', title: 'Back to the Future III' }
     ]
   },
   {
-    id: "2",
-    name: "David Fincher",
+    id: '2',
+    name: 'David Fincher',
     movies: [
-      { id: "2-1", title: "Social Network" },
-      { id: "2-2", title: "The Girl with the Dragon Tattoo" },
-      { id: "2-3", title: "Fight Club" },
-      { id: "2-4", title: "Se7en" }
+      { id: '2-1', title: 'Social Network' },
+      { id: '2-2', title: 'The Girl with the Dragon Tattoo' },
+      { id: '2-3', title: 'Fight Club' },
+      { id: '2-4', title: 'Se7en' }
     ]
   }
 ];

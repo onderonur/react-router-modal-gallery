@@ -1,7 +1,7 @@
-import React from "react";
-import styled, { createGlobalStyle } from "styled-components";
-import Routes from "./Routes";
-import Header from "./components/Header";
+import React from 'react';
+import styled, { createGlobalStyle } from 'styled-components';
+import Routes from './Routes';
+import Header from './components/Header';
 
 const GlobayStyle = createGlobalStyle`
   body {
