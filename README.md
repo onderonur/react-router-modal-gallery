@@ -148,7 +148,7 @@ Actually, this has nothing advanced but it looks a little more decent. You may u
 
 ```javascript
 //...
-import { ModalSwitch, ModalRoute } from "../../src";
+import { ModalSwitch, ModalRoute } from "react-router-modal-gallery";
 
 const routes = [
   {
