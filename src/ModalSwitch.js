@@ -4,7 +4,8 @@ import React, {
   useRef,
   useReducer,
   useState,
-  useCallback
+  useCallback,
+  useMemo
 } from 'react';
 import propTypes from 'prop-types';
 import { splitPathnameAndQueryString } from './ModalLink';
@@ -136,7 +137,7 @@ function ModalSwitch({ history, location, children, renderModal }) {
     checkIfStartedWithModal
   ]);
 
-  function redirectToBack() {
+  const redirectToBack = useCallback(() => {
     const prevLocation = previousParentLocation.current;
 
     const keysLength = modalLocationKeys.length;
@@ -146,7 +147,7 @@ function ModalSwitch({ history, location, children, renderModal }) {
     } else {
       history.push(prevLocation.pathname);
     }
-  }
+  }, [history, modalLocationKeys.length]);
 
   const isModal = !!(
     location.state &&
@@ -156,14 +157,16 @@ function ModalSwitch({ history, location, children, renderModal }) {
 
   const switchLocation = isModal ? previousParentLocation.current : location;
 
+  const contextValue = useMemo(() => {
+    return {
+      redirectToBack,
+      previousParentLocation: previousParentLocation.current,
+      isModal
+    };
+  }, [isModal, redirectToBack]);
+
   return (
-    <ModalRouteContext.Provider
-      value={{
-        redirectToBack,
-        previousParentLocation: previousParentLocation.current,
-        isModal
-      }}
-    >
+    <ModalRouteContext.Provider value={contextValue}>
       <Switch location={switchLocation}>{children}</Switch>
       {isModal &&
         renderModal({
