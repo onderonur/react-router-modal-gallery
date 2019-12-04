@@ -13,7 +13,9 @@ It will handle the history and location by default and you can use any modal com
 
 To install:
 
-`npm install --save react-router-modal-gallery`
+```sh
+npm install --save react-router-modal-gallery
+```
 
 This assumes you are using npm as your package manager.
 
