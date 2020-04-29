@@ -4,7 +4,7 @@ This is a simple package for the react-router to implement url based modals. It 
 
 Besides all of the implementation is made by using JavaScript, the components that you can use has TypeScript definitions in index.d.ts file. Thus, you can use them in your TypeScript projects.
 
-**Live demo on Netlify is [here](https://react-router-modal-gallery.netlify.com).**
+**Live demo on Netlify is [here](https://react-router-modal-gallery.netlify.app).**
 
 You may use this package if you want to render modals like **Twitter**, **Facebook** or **Pinterest** style.
 It will handle the history and location by default and you can use any modal component from your favorite UI library (material-ui, ant-design etc.)! You can find an example for material-ui at `./demo` folder. Also, there is a more complete application that uses this package [here](https://github.com/onderonur/movies-app-graphql).
