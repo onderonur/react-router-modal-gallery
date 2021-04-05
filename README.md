@@ -96,7 +96,7 @@ import { ModalLink } from "react-router-modal-gallery";
 
 When you click this link, it will attach the required `modal:true` state to `to` prop. Thus, ModalSwitch and ModalRoute will automatically handle the modal.
 
-## Navigation Programmatically
+## Navigating Programmatically
 
 You can navigate to a modal route programmatically by passing `modal: true` in your `location.state` object like:
 ```js
