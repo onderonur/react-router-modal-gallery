@@ -96,6 +96,20 @@ import { ModalLink } from "react-router-modal-gallery";
 
 When you click this link, it will attach the required `modal:true` state to `to` prop. Thus, ModalSwitch and ModalRoute will automatically handle the modal.
 
+## Navigation Programmatically
+
+You can navigate to a modal route programmatically by passing `modal: true` in your `location.state` object like:
+```js
+history.push({
+      pathname: "/some-modal-route",
+      state: { 
+            // When you pass modal: true in your location.state,
+            // you will be navigated to a modal route.
+            modal: true 
+      },
+});
+```
+
 ## Rendering Modals on Initial Render
 
 If you want to open modals on the initial render like Twitter does, you should insert ModalRoute components to children of ModalSwitch. For example;
