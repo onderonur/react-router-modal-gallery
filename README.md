@@ -1,5 +1,7 @@
 # react-router-modal-gallery
 
+**Deprecated:** With the new react-router (v6) this package has no usage unfortunately. For v4 and v5 it will work hopefully. But there will be no maintaining or enhancements for it. Thanks!
+
 This is a simple package for the react-router to implement url based modals. It is mainly based on the Modal Gallery example on [React Training/React Router](https://reacttraining.com/react-router/web/example/modal-gallery) with a little bit of enhancing and some reusable components like ModalRoute, ModalLink and ModalSwitch.
 
 Besides all of the implementation is made by using JavaScript, the components that you can use has TypeScript definitions in index.d.ts file. Thus, you can use them in your TypeScript projects.
